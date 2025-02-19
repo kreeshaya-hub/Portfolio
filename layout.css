@@ -1,0 +1,95 @@
+/* 
+    Author: Kreeshaya Shiva Subramanian
+    Date: 27-10-2024
+    Title: Final Project, e-Portfolio 
+*/
+
+
+/* mobile styles */
+.mywork {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.grid-element {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+
+/* tablet styles */
+@media only screen and (min-width: 600px) {
+    
+    .portfolio-grid {
+        grid-template-columns: auto auto auto;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-grid img {
+        width: 200px;
+    }
+
+    .grid-container {
+        margin: 20px;
+    }
+
+    .mywork {
+        grid-template-columns: auto auto;
+        padding: 40px;
+    }
+
+    .mywork .work {
+        padding: 30px;
+        font-size: 18px;
+    }
+
+    .mywork > *:first-child {
+        grid-column: 1/3;
+    }
+
+    .mywork > *:last-child {
+        grid-column: 1/3;
+    }
+
+    .grid-item {
+        font-size: 18px;
+        padding: 30px;
+        line-height: 2;
+        margin: 10px;
+    }
+}
+
+/* desktop styles */
+@media only screen and (min-width: 768px) {
+    .portfolio-grid img {
+        width: 300px;
+    }
+
+    .grid-item {
+        margin: 20px;
+    }
+}

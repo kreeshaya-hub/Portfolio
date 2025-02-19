@@ -1,0 +1,63 @@
+<!-- 
+    Author: Kreeshaya Shiva Subramanian
+    Date: 13-12-2024
+    Title: Final Project, e-Portfolio
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreeshaya's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="/mylogo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+    <link href="/layout.css" rel="stylesheet">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+
+    <main>
+    
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Phone:</strong> 343-777-9042</p>
+            <p><strong>Email:</strong> <a href="mailto:kreeshayaworks@gmail.com">kreeshayaworks@gmail.com</a></p>
+            <p><strong>Location:</strong> Halifax, NS, Canada</p>
+        </section>
+    
+        <section class="section">
+            <h2>Let's Connect</h2>
+            <p>I'm always eager to discuss new opportunities and projects. Whether you're looking for a web developer to bring your vision to life or need assistance with an existing project, I'm here to help. Please fill out the form below, and I'll get back to you as soon as possible!</p>
+    
+            <div class="form-container">
+               
+                <form action="#" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../scripts.js" defer></script>
+</body>
+</html>

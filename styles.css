@@ -1,0 +1,389 @@
+/* General Styles */
+body {
+    background-color: #001f3f; /* Dark blue background */
+    color: #ffffff; /* White font color */
+    font-family: 'Heebo', 'Mukta', sans-serif; /* Using Google Fonts */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #002a4d; 
+    padding: 60px 0 100px;
+    text-align: center;
+    position: relative;
+}
+
+header img { 
+    width: 500px; 
+    position: absolute; 
+    top: 95%; 
+    left: 30%; 
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #d4d4d4;
+    margin-bottom: 20px; /* Added spacing below the paragraph */
+}
+
+header .btn {
+    display: block;
+    margin: 20px auto;
+    color: #001f3f;
+    font-weight: bold;
+}
+
+header .container {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.menu-icon {
+    display: none; 
+}
+
+
+.menu-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    gap: 100px; 
+    margin-bottom: 40px; 
+}
+
+.menu-links a {
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.menu-links a:hover {
+    color: #00bfff; 
+}
+
+/* Hero Section */
+header .hero-section {
+    text-align: center;
+}
+
+/* About Me Section */
+.about-me {
+    background: #002a4d;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0 auto 50px; 
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.about-me h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #00bfff;
+}
+
+/* Work Section */
+.mywork .work {
+    background: #003366; 
+    padding: 50px; 
+    margin: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+}
+
+.mywork h3 {
+    font-size: 1.5rem;
+    color: #00bfff;
+}
+
+.mywork p {
+    color: #d4d4d4;
+}
+
+.mywork button {
+    color: #ffffff;
+    background: #007bff; /* Bootstrap Primary */
+    border: none;
+    display: block;
+    margin: 20px auto; /* Centering the button */
+}
+
+/* Future Plan Section */
+.future-plan {
+    background: #001f3f;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Added spacing between sections */
+}
+
+.future-plan h2 {
+    font-size: 1.8rem;
+    color: #00bfff;
+}
+
+.future-plan p {
+    color: #d4d4d4;
+}
+
+.future-plan button {
+    background: #28a745; /* Bootstrap Success */
+    color: #ffffff;
+    border: none;
+    display: block;
+    margin: 20px auto; /* Centering the button */
+}
+
+
+/* Goals Table Styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #004080; /* Darker blue for table header */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+table td {
+    background-color: #002a4d;
+    color: #d4d4d4;
+}
+
+/* Table Hover Effect */
+table tbody tr:hover {
+    background-color: #003366; /* Lighter blue on hover */
+}
+
+.py-5 h1 {
+    text-align: center;
+}
+
+/* Skills Section */
+.skills-main {
+    margin: 50px;
+}
+
+.skills-main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.skills-main h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Style for unordered lists */
+.skills-main ul {
+    padding-left: 20px;
+}
+
+.skills-main ul li {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Grid Layout for Skills and Additional Skills */
+.skills-main .row {
+    margin-bottom: 30px;
+    margin: 20px;
+}
+
+/* Make each row into two columns on desktop, one on mobile */
+.skills-main .row .col-md-6 {
+    padding: 10px;
+}
+
+.skills-main .row > div {
+    /* Two items per row for medium and large screens */
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+/* Portfolio Section */
+.my-work h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.my-work .col-md-4 {
+    text-align: center;
+}
+
+.my-work img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.my-work h3 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+/* Resume page styles */
+.myresume {
+    text-align: center;
+    margin: 20px;
+}
+
+/* contact page styles */
+.contact-info {
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.section {
+    text-align: center;
+    padding: 20px;
+}
+
+.section p {
+    padding: 20px;
+    margin: 20px;
+}
+
+.form-container {
+    margin: 20px;
+    padding: 10px;
+}
+
+.form-container input {
+    width: 20em;
+}
+
+/* Footer */
+footer {
+    background: #003366;
+    color: #ffffff;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* for mobiles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header img {
+        left:40%;
+        z-index: 1;
+    }
+
+    .py-5 h1 , .myresume, .skills-main h1, .contact-info{
+        position: relative;
+        z-index: 2;
+    }
+
+    header {
+        padding: 100px 0 120px;
+    }
+
+
+    /* Hide the checkbox itself */
+    input[type="checkbox"].d-none {
+        display: none;
+    }
+
+    /* When the checkbox is checked, display the menu */
+    input[type="checkbox"]:checked + .menu-icon + .menu-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+    .menu-links {
+        position: fixed;
+        top: 50px; 
+        width: 100%;
+        padding: 20px;
+        background-color: #000912;
+        text-align: center;
+        color: #fff;
+        display: none;
+    }
+
+    .about-me h2, .mywork h3, .future-plan h2 {
+        font-size: 1.5rem;
+    }
+
+    .menu-icon {
+        display: block; 
+        align-content: start;
+        font-size: 1.5rem;
+        color: #ffffff;
+        position: absolute; /* Position it relative to the header */
+        top: 20px; /* Adjust vertical position */
+        left: 20px; /* Align to the left */
+        font-size: 2rem; /* Adjust the size */
+        cursor: pointer; /* Pointer cursor */
+        z-index: 2; /* Ensure it's above other elements */
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    .future-plan h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-main .row > div {
+        /* Stack each item to fill the full width */
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .row .img-fluid {
+        width: 100%;
+    }
+
+}
+
+/* Canvas Background */
+#backgroundCanvas {
+    position: fixed; /* Use fixed position so it stays in place when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8; /* Make the canvas visible */
+}
