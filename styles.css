@@ -68,7 +68,7 @@ header .container {
 }
 
 .menu-links a:hover {
-    color: #00bfff; 
+    color: #0062cc; 
 }
 
 /* Hero Section */
@@ -82,7 +82,7 @@ header .hero-section {
     padding: 30px;
     border-radius: 10px;
     margin: 0 auto 50px; 
-    margin-top: 15px;
+    margin-top: 5rem;
     width: 100%;
     text-align: center;
     position: relative;
@@ -93,7 +93,7 @@ header .hero-section {
 .about-me h2 {
     font-size: 1.8rem;
     text-align: center;
-    color: #00bfff;
+    color: #f7f7f7;
 }
 
 .about-me p {
@@ -101,9 +101,72 @@ header .hero-section {
 }
 
 /* Recent Projects */
-.recent-projects h2{
+.recent-projects {
     text-align: center;
-    margin: 20px;
+    padding: 50px 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.col-md-4 {
+    flex: 1 1 300px; /* Ensures flexibility while keeping a minimum width */
+    max-width: 350px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Makes all cards equal height */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+.btn-primary {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
 }
 
 /* skills home page */
@@ -167,33 +230,83 @@ header .hero-section {
         font-size: 0.9rem;
     }
 
-/* Portfolio Section */
-.my-work h1 {
-    font-size: 2.5rem;
+/* Main Projects Section */
+.projects-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Heading for the section */
+.section-title {
+    font-size: 2.5em;
+    color: #333;
     text-align: center;
     margin-bottom: 30px;
 }
 
-.my-work .col-md-4 {
-    text-align: center;
+/* Section headings (Tech and Experience) */
+.section-heading {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.my-work img {
-    width: 50%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+/* Container for project cards */
+.project-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Larger cards */
+    gap: 20px;
+    padding: 20px;
 }
 
-.my-work h3 {
-    margin-top: 10px;
-    font-size: 1.3rem;
+/* Styling for each project card */
+.project-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Resume page styles */
-.myresume {
-    text-align: center;
-    margin: 20px;
+/* Hover effect */
+.project-card:hover {
+    transform: translateY(-10px);
 }
+
+/* Image styling */
+.project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Content section inside the card */
+.project-content {
+    padding: 20px;
+}
+
+/* Title inside card */
+.project-title {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Description text inside the card */
+.project-description {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Styling for different project sections */
+.tech-projects, .experience-projects {
+    margin-bottom: 50px;
+}
+
 
 /* Contact Info Section */
 .contact-info {
@@ -202,7 +315,7 @@ header .hero-section {
     padding: 30px;
     border-radius: 10px;
     margin: 0 auto 50px; 
-    margin-top: 15px;
+    margin-top: 5rem;
     width: 80%;
     text-align: center;
     position: relative;
@@ -303,6 +416,44 @@ button:hover {
     background: #005a8e;
 }
 
+/* Resume Section */
+.resume-section {
+    margin: 40px 0;
+    padding: 30px;
+    background-color: #002a4d;
+    text-align: center;
+}
+
+/* Resume Section Title */
+.resume-section-title {
+    font-size: 2.5em;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+/* Resume Description */
+.resume-description {
+    font-size: 1.2em;
+    color: #f1f1f1;
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+.resume-button {
+    background-color: #0062cc; /* Green background */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+.resume-button:hover {
+    background-color: #01a8e0;
+}
 
 /* Footer */
 footer {
@@ -354,7 +505,7 @@ footer p {
         top: 50px; 
         width: 100%;
         padding: 20px;
-        background-color: #000912;
+        background-color: #0051a2;
         text-align: center;
         color: #fff;
         display: none;
@@ -381,8 +532,13 @@ footer p {
         font-size: 0.9rem;
     }
 
-    .future-plan h2 {
-        font-size: 1.5rem;
+    .project-cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .resume-button {
+        width: 100%;
+        padding: 12px;
     }
 
     .skills-main .row > div {
@@ -395,15 +551,4 @@ footer p {
         width: 100%;
     }
 
-}
-
-/* Canvas Background */
-#backgroundCanvas {
-    position: fixed; /* Use fixed position so it stays in place when scrolling */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.8; /* Make the canvas visible */
 }

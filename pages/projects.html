@@ -1,0 +1,135 @@
+<!-- 
+    Author: Kreeshaya Shiva Subramanian
+    Title: Portfolio
+    Description: This is the main page of my portfolio website. It contains information about me, my work, and my future plans. It also includes links to my resume and skills page.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Kreeshaya's Portfolio</title>
+     <!-- Preconnect for Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <!-- Bootstrap CSS -->
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Favicon and Custom Stylesheets -->
+      <!-- Flaticon CDN -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+     <link rel="icon" type="image/png" href="/logo.png">
+     <link href="/styles.css" rel="stylesheet">
+     <link href="/layout.css" rel="stylesheet">
+ </head>
+ <body>
+<main class="container">
+
+    <div class="projects-section">
+        <h2 class="section-title">My Projects</h2>
+    
+        <!-- Tech-Based Projects Section -->
+        <div class="tech-projects">
+            <h3 class="section-heading">Tech-Based Projects</h3>
+            <div class="project-cards-container">
+                <div class="project-card">
+                    <img src="../portfolio-images/mongoDb.png" alt="Tech Project 1" class="project-image">
+                    <div class="project-content">
+                        <h4 class="project-title">MongoDatabase Application</h4>
+                        <p class="project-description">
+                            I built a backend application utilizing Bun.js as the JavaScript runtime and Hono.js for high-performance routing. I designed and managed a MongoDB collection in MongoDB Compass, implementing Mongoose for schema validation. Additionally, I developed secure and efficient CRUD endpoints with data validation to ensure smooth database operations.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="../portfolio-images/safeCampus.png" alt="Tech Project 2" class="project-image">
+                    <div class="project-content">
+                        <h4 class="project-title">MERN Stack Application</h4>
+                        <p class="project-description">
+                            I developed a safety compliance tracker using the MERN stack and SQL for efficient data management and retrieval. I implemented both frontend and backend functionality, ensuring seamless integration and smooth user interaction. Additionally, I collaborated within a team, contributing to system architecture, problem-solving, and the development of new features.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="../portfolio-images/chinook.png" alt="Tech Project 3" class="project-image">
+                    <div class="project-content">
+                        <h4 class="project-title">Chinook Database</h4>
+                        <p class="project-description">
+                            I developed RESTful APIs using Express.js, allowing users to efficiently perform CRUD operations. I integrated an SQL database to securely manage and store user data with optimized queries. Additionally, I implemented backend logic for data validation, authentication, and ensured seamless user interactions with the endpoints.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Previous Experience Section -->
+        <div class="experience-projects">
+            <h3 class="section-heading">Previous Experience</h3>
+            <div class="project-cards-container">
+                <div class="project-card">
+                    <img src="../portfolio-images/city-of-ottawa.jpg" alt="Experience Project 1" class="project-image">
+                    <div class="project-content">
+                        <h4 class="project-title">City Of Ottawa - Video Editor (Team Lead)</h4>
+                        <p class="project-description">Led a promotional video project, handling planning, filming, editing, and client coordination.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="../portfolio-images/advertisement.png" alt="Experience Project 2" class="project-image">
+                    <div class="project-content">
+                        <h4 class="project-title">The Bigger Picture Films - Video Editor</h4>
+                        <p class="project-description">
+                            Edited commercials, social media content, and long/short-format videos while managing file organization and on-set sync.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="../portfolio-images/pre-weddingshoot.png" alt="Experience Project 3" class="project-image">
+                    <div class="project-content">
+                        <h4 class="project-title">Only Much Louder - Social Media Artist Manager</h4>
+                        <p class="project-description">
+                            Created and edited social media content for artists, stand-up shows, and OTT platforms while organizing media assets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="resume-section">
+        <h2 class="resume-section-title">My Resume</h2>
+        <p class="resume-description">You can view or download my resume in PDF format by clicking the button below.</p>
+        <a href="/kreeshaya-resume.pdf" class="resume-button" target="_blank">View/Download Resume</a>
+    </div>
+    
+
+    <div class="connect">
+        <h2 class="h3 text-center">Connect with Me</h2>
+        <div class="text-center">
+            <a href="https://www.linkedin.com/in/kreeshaya-subramanian-b89562251/" target="_blank" rel="noopener noreferrer" class="mx-2">
+                <i class="fa-brands fa-linkedin" style="font-size: 2rem; margin:10px"></i>
+            </a>                
+            <a href="mailto:kreeshayaworks@gmail.com" class="mx-2">
+                <i class="fa-solid fa-envelope" style="font-size: 2rem; margin:10px"></i>
+            </a>
+            <a href="tel:+13437779042" class="mx-2">
+                <i class="fa-solid fa-phone" style="font-size: 2rem; margin:10px"></i>
+            </a>
+        </div>
+        <div class="text-center mt-4">
+            <a href="/pages/contact.html" class="btn btn-primary" >Get in Touch</a>
+        </div>
+    </div>
+    
+</main>
+    
+     <!-- Bootstrap JS and dependencies -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script src="../scripts.js" defer></script>
+ </body>
+ </html>
+ 
