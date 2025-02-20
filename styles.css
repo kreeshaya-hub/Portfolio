@@ -28,9 +28,14 @@ header p {
 
 header .btn {
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     color: #001f3f;
     font-weight: bold;
+    transition: 0.1s;
+}
+
+header .btn:hover {
+    background-color: #00bfff; 
 }
 
 header .container {
@@ -95,89 +100,17 @@ header .hero-section {
     color: #d4d4d4;
 }
 
-/* Work Section */
-.mywork .work {
-    background: #003366; 
-    padding: 50px; 
-    margin: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px; 
-}
-
-.mywork h3 {
-    font-size: 1.5rem;
-    color: #00bfff;
-}
-
-.mywork p {
-    color: #d4d4d4;
-}
-
-.mywork button {
-    color: #ffffff;
-    background: #007bff; /* Bootstrap Primary */
-    border: none;
-    display: block;
-    margin: 20px auto; /* Centering the button */
-}
-
-/* Future Plan Section */
-.future-plan {
-    background: #001f3f;
-    padding: 30px; /* Increased padding */
-    border-radius: 10px;
-    margin-bottom: 20px; /* Added spacing between sections */
-}
-
-.future-plan h2 {
-    font-size: 1.8rem;
-    color: #00bfff;
-}
-
-.future-plan p {
-    color: #d4d4d4;
-}
-
-.future-plan button {
-    background: #28a745; /* Bootstrap Success */
-    color: #ffffff;
-    border: none;
-    display: block;
-    margin: 20px auto; /* Centering the button */
-}
-
-
-/* Goals Table Styles */
-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-table th, table td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-
-table th {
-    background-color: #004080; /* Darker blue for table header */
-    color: #ffffff;
-    font-weight: bold;
-}
-
-table td {
-    background-color: #002a4d;
-    color: #d4d4d4;
-}
-
-/* Table Hover Effect */
-table tbody tr:hover {
-    background-color: #003366; /* Lighter blue on hover */
-}
-
-.py-5 h1 {
+/* Recent Projects */
+.recent-projects h2{
     text-align: center;
+    margin: 20px;
+}
+
+/* skills home page */
+
+.skills h2 {
+    margin-top: 5rem;
+    margin-bottom: 20px;
 }
 
 /* Skills Section */
@@ -185,6 +118,19 @@ table tbody tr:hover {
     margin: 50px;
 }
 
+.skills-icons .fa-brands {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* connect home page */
+.connect h2 {
+    margin-top: 5rem;
+    margin-bottom: 20px;
+}
+
+
+/* skills  */
 .skills-main h1 {
     font-size: 2.5rem;
     margin-bottom: 40px;
@@ -283,6 +229,7 @@ footer {
     background: #003366;
     color: #ffffff;
     padding: 20px;
+    margin-top: 20px;
 }
 
 footer p {
