@@ -130,45 +130,42 @@ header .hero-section {
 }
 
 
-/* skills  */
-.skills-main h1 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    text-align: center;
-    font-weight: 700;
-}
-
-.skills-main h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* Style for unordered lists */
-.skills-main ul {
-    padding-left: 20px;
-}
-
-.skills-main ul li {
-    font-size: 1.1rem;
-    margin: 5px 0;
-}
-
-/* Grid Layout for Skills and Additional Skills */
-.skills-main .row {
-    margin-bottom: 30px;
-    margin: 20px;
-}
-
-/* Make each row into two columns on desktop, one on mobile */
-.skills-main .row .col-md-6 {
-    padding: 10px;
-}
-
-.skills-main .row > div {
-    /* Two items per row for medium and large screens */
-    flex: 0 0 50%;
-    max-width: 50%;
-}
+/* Skills Page  */
+.skills-main {
+        padding: 40px;
+        text-align: center;
+    }
+    .skills-main h1 {
+        margin-bottom: 20px;
+    }
+    .skills-container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 2;
+    }
+    .skills-card {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 40px;
+        width: 500px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .skills-list span {
+        background: #007bff;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+    }
 
 /* Portfolio Section */
 .my-work h1 {

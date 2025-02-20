@@ -13,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="/mylogo.png">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -21,68 +22,110 @@
     <link href="/layout.css" rel="stylesheet">
 </head>
 <body>
-    <canvas id="backgroundCanvas"></canvas>
-
-    <main class="skills-main">
-    <h1>What can I do?</h1>
-    <div class="row">
-        <h2>Skills</h2>
-        <ul>
-            <li>Web Design</li>
-            <li>Design Thinking</li>
-            <li>Problem-Solving</li>
-            <li>Debugging</li>
-            <li>Strong Communication</li>
-            <li>Javascript</li>
-            <li>CSS</li>
-            <li>Figma</li>
-            <li>HTML</li>
-            <li>PHP</li>
-            <li>Wordpress</li>
-            <li>Adobe Creative Suite (Premiere Pro, After Effects, Photoshop, Illustrator, InDesign, Audition)</li>
-        </ul>
-        <h2>Additional Skills</h2>
-        <ul>
-            <li>Wireframe Creation</li>
-            <li>Front End Coding</li>
-            <li>Backend Tech</li>
-            <li>Troubleshooting</li>
-            <li>Computer Literacy</li>
-            <li>Project Management Tools</li>
-        </ul>
-    </div>
+<main class="skills-main">
+    <h1 class="text-center">What can I do?</h1>
+    <div class="skills-container">
         
-        <div class="my-work">
-        <h1 class="text-center mb-4">My work</h1>
-        <div class="row">
-            <!-- Portfolio Section -->
-            <div class="col-md-4 mb-4">
-                <h3>Server Side API integration</h3>
-                <img class="img-fluid" src="/portfolio-images/work1.png" alt="manipulation-artwork">
+        <!-- Tech-Based Skills Card -->
+        <div class="skills-card">
+            <h2>Tech-Based Skills</h2>
+            <p>Expertise in various web technologies and design tools.</p>
+            <div class="skills-list">
+                <span>Javascript</span>
+                <span>Typescript</span>
+                <span>React</span>
+                <span>Express.js</span>
+                <span>Node.js</span>
+                <span>Git</span>
+                <span>PHP</span>
+                <span>RESTful APIs</span>
+                <span>Agile Methodolgies</span>
+                <span>MongoDB</span>
+                <span>SQL</span>    
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>WordPress</span>
+                <span>Figma</span>
+                <span>Adobe Creative Suite</span>
             </div>
-            <div class="col-md-4 mb-4">
-                <h3>Canvas and Bootstrap Website</h3>
-                <img class="img-fluid" src="/portfolio-images/work2.png" alt="typography">
-            </div>
-            <div class="col-md-4 mb-4">
-                <h3>Server side Battleship Game</h3>
-                <img class="img-fluid" src="/portfolio-images/work3.png" alt="poster">
-            </div>
-            <div class="col-md-4 mb-4">
-                <h3>Pre-Wedding Video</h3>
-                <img class="img-fluid" src="/portfolio-images/pre-weddingshoot.png" alt="wedding">
-            </div>
-            <div class="col-md-4 mb-4">
-                <h3>Advertisement</h3>
-                <img class="img-fluid" src="/portfolio-images/advertisement.png" alt="ad">
-            </div>
-            <div class="col-md-4 mb-4">
-                <h3>Music Video</h3>
-                <img class="img-fluid" src="/portfolio-images/STAYHINDI.png" alt="music-video"> 
+        </div>
+        
+        <!-- Personal Skills Card -->
+        <div class="skills-card">
+            <h2>Personal Skills</h2>
+            <p>Skills that enhance problem-solving and collaboration.</p>
+            <div class="skills-list">
+                <span>Design Thinking</span>
+                <span>Problem-Solving</span>
+                <span>Debugging</span>
+                <span>Troubleshooting</span>
+                <span>Strong Communication</span>
+                <span>Wireframe Creation</span>
+                <span>Project Management</span>
             </div>
         </div>
     </div>
-    </main>
+
+<div class="container">
+    <div class="recent-projects" style="margin-top: 5rem;">
+        <h2 class="h3">My Recent Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project One">
+                    <div class="card-body">
+                        <h5 class="card-title">MongoDatabase Application</h5>
+                        <p class="card-text">Built a backend application using Bun.js as the JavaScript runtime and Hono.js as the
+                            framework for high-performance routing.</p>
+                        <a href="#" class="btn btn-primary">More about project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project Two">
+                    <div class="card-body">
+                        <h5 class="card-title">MERN Stack Application</h5>
+                        <p class="card-text">Developed a safety compliance tracker using the MERN stack and SQL for efficient data
+                            management and retrieval.</p>
+                        <a href="#" class="btn btn-primary">More about project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project Three">
+                    <div class="card-body">
+                        <h5 class="card-title">Chinook Database</h5>
+                        <p class="card-text">Developed RESTful API's using Express.js, enabling users to perform CRUD operations
+                            efficiently.</p>
+                        <a href="#" class="btn btn-primary">More about project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="connect">
+        <h2 class="h3 text-center">Connect with Me</h2>
+        <div class="text-center">
+            <a href="https://www.linkedin.com/in/kreeshaya-subramanian-b89562251/" target="_blank" rel="noopener noreferrer" class="mx-2">
+                <i class="fa-brands fa-linkedin" style="font-size: 2rem; margin:10px"></i>
+            </a>                
+            <a href="mailto:kreeshayaworks@gmail.com" class="mx-2">
+                <i class="fa-solid fa-envelope" style="font-size: 2rem; margin:10px"></i>
+            </a>
+            <a href="tel:+13437779042" class="mx-2">
+                <i class="fa-solid fa-phone" style="font-size: 2rem; margin:10px"></i>
+            </a>
+        </div>
+        <div class="text-center mt-4">
+            <a href="/pages/contact.html" class="btn btn-primary" >Get in Touch</a>
+        </div>
+    </div>
+
+</div>
+</main>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
