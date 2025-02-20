@@ -198,31 +198,114 @@ header .hero-section {
     margin: 20px;
 }
 
-/* contact page styles */
+/* Contact Info Section */
 .contact-info {
+    background: #002a4d;
+    color: #d4d4d4;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0 auto 50px; 
+    margin-top: 15px;
+    width: 80%;
     text-align: center;
-    padding: 10px;
-    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
 }
 
+.contact-info h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-info p a {
+    color: #00bfff;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.contact-icons i {
+    font-size: 2.2rem;
+    padding: 10px;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.2);
+    color: #0077b5; /* LinkedIn blue */
+}
+
+/* Form Section */
 .section {
+    background: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 600px;
     text-align: center;
-    padding: 20px;
 }
 
-.section p {
-    padding: 20px;
-    margin: 20px;
+.section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
+/* Form Styles */
 .form-container {
-    margin: 20px;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.form-container input {
-    width: 20em;
+form {
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
 }
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background: #0077b5;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #005a8e;
+}
+
 
 /* Footer */
 footer {

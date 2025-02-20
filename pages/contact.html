@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="/mylogo.png">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -21,34 +21,45 @@
     <link href="/layout.css" rel="stylesheet">
 </head>
 <body>
-    <canvas id="backgroundCanvas"></canvas>
-
     <main>
     
-        <section class="contact-info">
+         <!-- Contact Section with Icons -->
+         <section class="contact-info text-center">
             <h2>Get in Touch</h2>
-            <p><strong>Phone:</strong> 343-777-9042</p>
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/kreeshaya-subramanian-b89562251" target="_blank">
+                    <i class="fa-brands fa-linkedin" style="font-size: 2rem; margin: 10px;"></i>
+                </a>
+                <a href="mailto:kreeshayaworks@gmail.com">
+                    <i class="fa-solid fa-envelope" style="font-size: 2rem; margin: 10px;"></i>
+                </a>
+                <a href="tel:+13437779042" class="mx-2">
+                    <i class="fa-solid fa-phone" style="font-size: 2rem; margin: 10px;"></i>
+                </a>
+            </div>
+            <p><strong>Phone:</strong> <a href="tel:+13437779042">+1 343-777-9042</a></p>
             <p><strong>Email:</strong> <a href="mailto:kreeshayaworks@gmail.com">kreeshayaworks@gmail.com</a></p>
             <p><strong>Location:</strong> Halifax, NS, Canada</p>
         </section>
-    
+
+        <!-- Contact Form -->
         <section class="section">
             <h2>Let's Connect</h2>
-            <p>I'm always eager to discuss new opportunities and projects. Whether you're looking for a web developer to bring your vision to life or need assistance with an existing project, I'm here to help. Please fill out the form below, and I'll get back to you as soon as possible!</p>
-    
+            <p>I'm always eager to discuss new opportunities and projects. Please fill out the form below, and I'll get back to you as soon as possible!</p>
+
             <div class="form-container">
-               
-                <form action="#" method="post">
+                <form id="contact-form">
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="name" required><br><br>
-    
+
                     <label for="email">Email:</label><br>
                     <input type="email" id="email" name="email" required><br><br>
-    
+
                     <label for="message">Message:</label><br>
                     <textarea id="message" name="message" rows="4" required></textarea><br><br>
-    
-                    <input type="submit" value="Send Message">
+
+                    <button type="submit">Send Message</button>
+                    <p id="form-status"></p>
                 </form>
             </div>
         </section>

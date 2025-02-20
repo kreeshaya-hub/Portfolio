@@ -17,45 +17,42 @@ document.addEventListener("DOMContentLoaded", function() {
         .catch(error => console.error("Error loading footer:", error));
 });
 
+// FORM SUBMISSION
 
-// canvas animation
-const canvas = document.getElementById('backgroundCanvas');
-const ctx = canvas.getContext('2d');
+document.getElementById("contact-form").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Prevent default form submission
 
-function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-}
+    const formStatus = document.getElementById("form-status");
+    formStatus.innerText = "Sending message...";
 
-window.addEventListener('resize', resizeCanvas);
-resizeCanvas();
+    const formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    };
 
-let waveOffset = 0;
+    try {
+        const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                service_id: "service_8rqzr4k",
+                template_id: "template_p3rjx56",
+                user_id: "dnR2rZ_JIJKDLBts8",
+                template_params: formData
+            })
+        });
 
-function drawWave() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    const waveHeight = 30; // Height of the wave
-    const waveFrequency = 0.02; // Wave frequency
-    const waveSpeed = 0.5; // Wave speed
-
-    ctx.beginPath();
-    for (let x = 0; x < canvas.width; x++) {
-        const y =
-            Math.sin(x * waveFrequency + waveOffset) * waveHeight +
-            canvas.height / 2;
-        ctx.lineTo(x, y);
+        if (response.ok) {
+            formStatus.innerText = "Message sent successfully!";
+            document.getElementById("contact-form").reset();
+        } else {
+            throw new Error("Failed to send message.");
+        }
+    } catch (error) {
+        formStatus.innerText = "Error sending message. Please try again.";
+        console.error("Email sending error:", error);
     }
-
-    ctx.lineTo(canvas.width, canvas.height);
-    ctx.lineTo(0, canvas.height);
-    ctx.closePath();
-
-    ctx.fillStyle = 'rgba(0, 123, 255, 0.4)'; // Color of the wave
-    ctx.fill();
-
-    waveOffset += waveSpeed * 0.05;
-    requestAnimationFrame(drawWave);
-}
-
-drawWave();
+});
