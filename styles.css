@@ -487,6 +487,21 @@ footer p {
         padding: 100px 0 120px;
     }
 
+    .hero-section h1 {
+        padding: 10px;
+    }
+
+    .hero-section p {
+        padding: 20px;
+    }
+
+    #mylogo {
+        display: none;
+    }
+
+    #my-photo {
+        display: none;
+    }
 
     /* Hide the checkbox itself */
     input[type="checkbox"].d-none {
@@ -532,6 +547,83 @@ footer p {
         font-size: 0.9rem;
     }
 
+    .recent-projects {
+        padding: 30px 10px;
+    }
+
+    .card {
+        width: 100%; /* Full width cards */
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .card-img-top {
+        height: 180px; /* Reduce image height for smaller screens */
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        font-size: 0.85rem;
+        padding: 7px;
+    }
+
+    .skills-main {
+        padding: 15px;
+    }
+
+    .skills-main h1 {
+        font-size: 1.5rem; /* Further reduce heading size */
+    }
+
+    .skills-container {
+        gap: 20px; /* Tighten gaps between cards */
+    }
+
+    .skills-card {
+        padding: 20px; /* Compact card padding */
+        width: 100%;
+        max-width: 100%; /* Ensure full width for very small screens */
+    }
+
+    .skills-list {
+        gap: 5px; /* Reduce space between skill tags */
+    }
+
+    .skills-list span {
+        font-size: 0.75rem; /* Smaller skill tag size */
+        padding: 4px 8px; /* Adjust padding for a more compact look */
+    }
+
+    .section {
+        padding: 25px 10px;
+        max-width: 95%;
+    }
+
+    .section h2 {
+        font-size: 1.5rem; /* Further reduce heading size */
+    }
+
+    .form-container {
+        margin-top: 5px;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+        padding: 7px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 7px 14px;
+    }
+
     .project-cards-container {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
@@ -541,14 +633,15 @@ footer p {
         padding: 12px;
     }
 
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .skills-main .row > div {
         /* Stack each item to fill the full width */
         flex: 0 0 100%;
         max-width: 100%;
-    }
-
-    .row .img-fluid {
-        width: 100%;
     }
 
 }
