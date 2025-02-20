@@ -1,7 +1,5 @@
 /* General Styles */
 body {
-    background-color: #001f3f; /* Dark blue background */
-    color: #ffffff; /* White font color */
     font-family: 'Heebo', 'Mukta', sans-serif; /* Using Google Fonts */
     margin: 0;
     padding: 0;
@@ -11,16 +9,7 @@ header {
     background: #002a4d; 
     padding: 60px 0 100px;
     text-align: center;
-    position: relative;
-}
-
-header img { 
-    width: 500px; 
-    position: absolute; 
-    top: 95%; 
-    left: 30%; 
-    transform: translate(-50%, -50%);
-    z-index: 2; 
+    /* position: relative; */
 }
 
 header h1 {
@@ -100,6 +89,10 @@ header .hero-section {
     font-size: 1.8rem;
     text-align: center;
     color: #00bfff;
+}
+
+.about-me p {
+    color: #d4d4d4;
 }
 
 /* Work Section */
