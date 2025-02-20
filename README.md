@@ -8,9 +8,3 @@ Welcome to my personal portfolio repository! This project showcases my skills, e
 - **Interactive Elements** – Smooth animations and transitions.  
 - **Project Showcase** – Highlights my best work with descriptions and links.  
 - **Contact Section** – Easy ways to reach me.  
-
-## 🛠️ Tech Stack  
-- **Frontend**: HTML, CSS, JavaScript, React  
-- **Backend**: Node.js, Express  
-- **Database**: MongoDB  
-- **Version Control**: Git & GitHub  
